@@ -3,12 +3,16 @@
   "version": "1.0.0",
   "description": "Node.js on Docker",
   "author": "First Last <first.last@example.com>",
-  "main": "server.js",
+  "main": "src/index.ts",
   "private": true,
   "scripts": {
-    "start": "node server.js"
+    "start": "ts-node src/index.ts"
   },
   "dependencies": {
-    "express": "^4.16.1"
+    "@types/node": "^16.11.6",
+    "express": "^4.16.1",
+    "nodemon": "^2.0.14",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.4.4"
   }
 }
